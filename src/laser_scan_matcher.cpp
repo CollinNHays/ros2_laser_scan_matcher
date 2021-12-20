@@ -441,9 +441,9 @@ bool LaserScanMatcher::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
     odom_msg.pose.pose.position.x = f2b_.getOrigin().x();
     odom_msg.pose.pose.position.y = f2b_.getOrigin().y();
     odom_msg.pose.pose.position.z = f2b_.getOrigin().z();
-    odom_msg.pose.covariance[0] = std::numeric_limits<double>::max();
-    odom_msg.pose.covariance[7] = std::numeric_limits<double>::max();
-    odom_msg.pose.covariance[14] = std::numeric_limits<double>::max();
+    //odom_msg.pose.covariance[0] = std::numeric_limits<double>::max();
+    //odom_msg.pose.covariance[7] = std::numeric_limits<double>::max();
+    //odom_msg.pose.covariance[14] = std::numeric_limits<double>::max();
 
     odom_msg.pose.pose.orientation.x = f2b_.getRotation().x();
     odom_msg.pose.pose.orientation.y = f2b_.getRotation().y();
